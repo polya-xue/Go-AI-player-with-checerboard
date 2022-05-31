@@ -1,0 +1,120 @@
+<html>
+
+<script type="text/javascript" src="GUI.js"></script>
+<script type="text/javascript" src="GridGUI.js"></script>
+<script type="text/javascript" src="GameState.js"></script>
+<script type="text/javascript" src="Players.js"></script>
+<script type="text/javascript" src="Player_Student.js"></script>
+
+
+<head>
+    <title>HTML5 Connect 4</title>
+    <style>
+        body { font: 14px 'Verdana', sans-serif; }
+        select { font: 12px 'Verdana', sans-serif; }
+        button { font: 12px 'Verdana', sans-serif; }
+        table { font: 12px 'Courier', sans-serif; border-collapse: collapse; }
+        th, td { text-align: center; padding: 4px; }    
+        tr:nth-child(odd) { background-color: #f2f2f2 };
+        .multiselect { width: 200px; }
+        .selectBox { position: relative; }
+        .selectBox select { width: 100%; }
+        .overSelect { position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
+        #checkboxes { display: none; border: 1px #dadada solid; }
+        #checkboxes label { display: block; }
+        #checkboxes label:hover { background-color: #1e90ff; }
+    </style>
+</head>
+
+<script>
+init = function() {
+    
+    let gui = new GridGUI(document.getElementById("container"));
+    
+    // set up the main loop
+    setInterval(update, 1000 / 60);
+    function update() {
+        gui.update();
+    }
+}
+</script>
+
+
+<style>
+    #box{
+        height:220px;
+        width:200px;
+        margin:0 auto;
+        border:1px solid #0066FF;
+        overflow:hidden;
+        padding-bottom:20px;
+    }
+    #box li{
+        color:#333;
+        height:24px;
+    }
+    #box ul{
+        margin:0;
+        padding:0;
+    }
+</style>
+</head>
+<body>
+<div id="box"
+style="position:relative;
+        left:270px;
+        top:280px;"
+>
+<!--    <p> Show Box</p>-->
+    <br />
+    <ul id="con1">
+
+    </ul>
+    <ul id="con2">
+
+    </ul>
+    <br />
+    <ul id="con3">
+
+    </ul>
+    <ul id="con4">
+
+    </ul>
+    <br />
+    <ul id="con5">
+
+    </ul>
+</div>
+<script>
+    var area=document.getElementById("box");
+    area.innerHTML+=area.innerHTML;
+    var liHeight=24;
+    area.scrollTop=0;
+    var delay=2000;
+    var speed=50;
+    var time;
+    function starMove(){
+        area.scrollTop++;
+        time=setInterval("scrollUp()",speed);
+    }
+    function scrollUp(){
+        if(area.scrollTop%liHeight==0){
+            clearInterval(time);
+            setTimeout("starMove()",delay);
+        }else{
+            area.scrollTop++;
+            if(area.scrollTop>=area.offsetHeight/2){
+                area.scrollTop=0;
+            }
+        }
+    }
+    setTimeout("starMove()",delay);
+</script>
+
+
+
+<body onload="init()">
+
+<div id="container"></div>
+</body>
+</html>

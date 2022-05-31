@@ -1,0 +1,9 @@
+///\/\/\\\/\/\\\///\\/\\\//\/\//\/\/\/\\\/\/\\\///\\/\\\//\/\//\
+// Copyright (C) David Churchill - All Rights Reserved
+// COMP3200 - 2021FALL - Assignment 3
+// Written by David Churchill (dave.churchill@gmail.com)
+// Unauthorized copying of these files are strictly prohibited
+// Distributed only for course work at Memorial University
+// If you see this file online please contact email above
+///\/\/\\\/\/\\\///\\/\\\//\/\//\/\/\/\\\/\/\\\///\\/\\\//\/\//\
+                                                                                                               

@@ -1,5 +1,5 @@
 # Go-AI-player-with-checerboard
-Coding in JavaScript using machine learning algorithm to design a Go checkerboard and play Go as an AI player.
+Coding in JavaScript using machine learning algorithm to design a Go checkerboard and play Go as an AI player.
 
 
 running: run index.html

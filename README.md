@@ -1,8 +1,6 @@
-# Go-AI-player-with-checerboard
+Go-AI-player-with-checerboard
 Coding in JavaScript using machine learning algorithm to design a Go checkerboard and play Go as an AI player.
 
-
-running: run index.html
 
 Abstract:
 Go is played using a rectangular checkerboard (a square) and round black and white stones. The board is divided into 361 intersecting points with 19 horizontal and horizontal lines. A machine learning approach as an AI player to computer Go combining Monte-Carlo tree search with Alpha-beta search algorithm that has been proposed. In our implementation we optimize the searching time and depth for processing steps. The reliability of our method has been proved to be considerably effective by experimental results.
@@ -37,3 +35,6 @@ Finally, the test of the algorithm to evaluate the winner is necessary. There ar
 
 ![fig11](https://user-images.githubusercontent.com/60961564/171301211-3233f00a-65e2-4641-bb80-169b3cd8a177.jpg)
 
+
+
+running: run index.html
